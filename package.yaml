@@ -21,11 +21,14 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 default-extensions:
 - OverloadedStrings
+- DeriveGeneric
 
 dependencies:
 - base >= 4.7 && < 5
 - aeson
 - scotty
+- time
+- text
 
 library:
   source-dirs: src
