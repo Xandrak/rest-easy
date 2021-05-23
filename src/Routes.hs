@@ -6,4 +6,7 @@ import qualified Actions.GetCourses as GetCourses
 
 routes :: Scotty.ScottyM ()
 routes = do
-  Scotty.get "/ahoy" GetCourses.run
+  Scotty.get "/ahoy" $ do  
+    Scotty.text "Ahoy, matey!"
+  Scotty.get "/courses" GetCourses.all
+  Scotty.get "/courses" GetCourses.one
