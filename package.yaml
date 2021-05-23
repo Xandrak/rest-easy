@@ -29,6 +29,7 @@ dependencies:
 - scotty
 - time
 - text
+- hspec
 
 library:
   source-dirs: src
