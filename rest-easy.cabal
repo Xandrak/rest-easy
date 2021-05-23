@@ -25,7 +25,10 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Actions.GetCourses
+      Routes
+      Types.Course
+      Types.Course.Status
   other-modules:
       Paths_rest_easy
   hs-source-dirs:
