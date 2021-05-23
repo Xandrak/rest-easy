@@ -19,7 +19,7 @@ instance FromJSON Status where
   parseJSON = withText "Status" $ \txt ->
     case textToStatus txt of
       Right s -> pure s
-      Left err -> undefined
+      Left err -> undefined -- TODO: Handle failure
 
 textToStatus :: Text.Text -> Either Text.Text Status
 textToStatus text = case text of
