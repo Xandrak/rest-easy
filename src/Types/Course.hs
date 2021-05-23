@@ -10,6 +10,8 @@ data Course = Course
   , name :: String
   , status :: Status.Status
   , createdAt :: Time.UTCTime
+  , updatedAt :: Time.UTCTime
+  , deletedAt :: Time.UTCTime
   }
   deriving (Generic, Show)
 
